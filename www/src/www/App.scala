@@ -6,7 +6,10 @@ case class App() {
   def apply(): HtmlElement = {
     div(
       cls("h-screen w-screen flex justify-center items-center"),
-      "Memory Leak"
+      button(
+        cls("btn btn-primary"),
+        "Fetch Data"
+      )
     )
   }
 }
